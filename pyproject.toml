@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cifar10-modal-project"
+version = "0.1.0"
+description = "CIFAR-10 Classification with PyTorch and Modal"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^1.9.0"
+torchvision = "^0.10.0"
+modal = "^0.30.0"
+mlflow = "^1.26.0"
+tensorboard = "^2.9.0"
+typer = "^0.6.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
